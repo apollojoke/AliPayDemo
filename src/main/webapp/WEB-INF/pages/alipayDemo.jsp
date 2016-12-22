@@ -11,5 +11,11 @@
         <p>PRICE: 1 CNY</p>
         <input type="submit" value="AliPay">
     </form>
+    <br />
+    <form action="queryBill" method="post">
+
+        <p>Download Bill</p>
+        <input type="submit" value="Download">
+    </form>
 </body>
 </html>
