@@ -53,8 +53,8 @@ public class HelloController {
         randomNo++;
         lastOutTradeNo = outTradeNo;
         AlipayTradeWapPayRequest tradeRequest = new AlipayTradeWapPayRequest();//创建API对应的request
-        tradeRequest.setReturnUrl("http://localhost:8080/payReturn");
-        tradeRequest.setNotifyUrl("http://localhost:8080/payReturnNotice");//在公共参数中设置回跳和通知地址
+        tradeRequest.setReturnUrl("http://localhost:8080/AliPayDemo/payReturn");
+        tradeRequest.setNotifyUrl("http://localhost:8080/AliPayDemo/payReturnNotice");//在公共参数中设置回跳和通知地址
         tradeRequest.setBizContent("{" +
                 "    \"out_trade_no\":\""+outTradeNo+"\"," +
                 "    \"total_amount\":1," +
