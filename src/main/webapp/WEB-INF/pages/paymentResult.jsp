@@ -3,9 +3,15 @@
     <title>Alipay Payment Result</title>
 </head>
 <body>
-<h1>OUT_TRADE_NO: ${outTradeNo}, DOES TRADE SUCCESS?</h1>
-<button>YES</button>
-<button>NO</button>
+
+<form action="queryTrade" method="post">
+
+    <p>OUT_TRADE_NO: ${outTradeNo}</p>
+    <p>DOES TRADE SUCCESS?</p>
+    <input type="text" name="outTradeNo" value="${outTradeNo}" />
+    <input type="submit" value="YES"> <button>NO</button>
+
+</form>
 
 </body>
 </html>
